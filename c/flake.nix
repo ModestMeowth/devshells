@@ -15,12 +15,8 @@
         devenv.shells.default = {
           imports = [ ];
 
-          packages = with pkgs.python3Packages; [ ];
-
-          languages.python = {
+          languages.c = {
             enable = true;
-            uv.enable = true;
-            venv.enable = true;
           };
         };
       };
