@@ -1,0 +1,8 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.rubocop]
+command = "rubocop"
+excludes = []
+includes = ["*.rb"]
+options = []

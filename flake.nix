@@ -38,6 +38,11 @@
         description = "Basic Javascript devenv with uv";
       };
 
+      ruby = {
+        path = ./ruby;
+        description = "Basic Ruby devenv";
+      };
+
       rust = {
         path = ./rust;
         description = "Basic Rust devenv";
