@@ -11,9 +11,11 @@
 
       systems = inputs.nixpkgs.lib.systems.flakeExposed;
 
-      perSystem = { config, self', inputs', pkgs, system, ... } : {
+      perSystem = { config, self', inputs', pkgs, system, ... }: {
         devenv.shells.default = {
           imports = [ ];
+
+          packages = with pkgs; [ prettier ];
 
           languages.javascript = {
             enable = true;

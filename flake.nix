@@ -23,6 +23,11 @@
         description = "Basic Typescript devenv";
       };
 
+      lua = {
+        path = ./lua;
+        description = "Basic lua devenv";
+      };
+
       python = {
         path = ./python;
         description = "Basic Javascript devenv with uv";

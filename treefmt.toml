@@ -1,0 +1,14 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.alejandra]
+command = "alejandra"
+excludes = [ ]
+includes = ["*.nix"]
+options = [ ]
+
+[formatter.nixfmt]
+command = "nixfmt"
+excludes = [ ]
+includes = ["*.nix"]
+options = [ ]

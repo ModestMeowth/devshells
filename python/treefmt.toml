@@ -1,0 +1,7 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.black]
+excludes = []
+includes = ["*.py", "*.pyi"]
+options = []

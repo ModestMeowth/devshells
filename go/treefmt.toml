@@ -1,0 +1,14 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.gofmt]
+command = "gofmt"
+excludes = ["vendor/*"]
+includes = ["*.go"]
+options = ["-w"]
+
+[formatter.gofumpt]
+command = "gofumpt"
+excludes = ["vendor/*"]
+includes = ["*.go"]
+options = ["-w"]

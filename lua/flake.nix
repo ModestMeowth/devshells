@@ -15,13 +15,9 @@
         devenv.shells.default = {
           imports = [ ];
 
-          packages = with pkgs; [ black ] ++ (with python3Packages; [ ]);
+          packages = with pkgs; [ lua_ls stylua ];
 
-          languages.python = {
-            enable = true;
-            uv.enable = true;
-            venv.enable = true;
-          };
+          languages.lua.enable = true;
         };
       };
     };

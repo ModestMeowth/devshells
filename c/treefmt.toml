@@ -1,0 +1,27 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.clang-format]
+command = "clang-format"
+excludes = [ ]
+includes = [
+  "*.c",
+  "*.cc",
+  "*.cpp",
+  "*.h",
+  "*.hh",
+  "*.hpp",
+  "*.glsl",
+  "*.vert",
+  ".tese",
+  ".geom",
+  ".frag",
+  ".comp",
+]
+options = ["-i"]
+
+[formatter.cmake-format]
+command = "cmake-format"
+excludes = [ ]
+includes = ["*.cmake", "CMakeLists.txt"]
+options = ["--in-place"]
