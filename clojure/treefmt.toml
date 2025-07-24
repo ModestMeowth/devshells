@@ -1,0 +1,8 @@
+allow-missing-formatter = true
+tree-root-file = "flake.nix"
+
+[formatter.cljfmt]
+command = "cljfmt"
+excludes = []
+includes = ["*.clj", "*.cljc", "*.cljs", "*.cljx"]
+options = ["fix"]

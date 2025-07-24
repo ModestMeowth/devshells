@@ -13,6 +13,11 @@
         description = "Basic C devenv";
       };
 
+      clojure = {
+        path = ./clojure;
+        description = "Basic Clojure devenv";
+      };
+
       go = {
         path = ./go;
         description = "Basic Go devenv";
